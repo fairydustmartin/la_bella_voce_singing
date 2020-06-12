@@ -17,6 +17,9 @@
             
             h5 { text-align: center;
             }
+                button {
+                    color: rgb(255, 0, 0);
+                }
         
         </style>
     </head>
@@ -29,7 +32,23 @@
         <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         
         <script src="https://platform.linkedin.com/in.js" type="text/javascript">lang: en_US</script>
-        <script type="IN/Share" data-url="https://www.linkedin.com"></script>
+        <script type="IN/Share" data-url="https://www.linkedin.com"></script> 
+        
+         <button id="clicker">Don't Push Me!!!</button>
+    
+    <script>
+    // 1. Find and store the element we want to listen to events on.
+    var clickerButton = document.getElementById("clicker");
+    // 2. Define the function that will respond to the event.
+    // callback 
+    var onButtonClick = function() {
+        clickerButton.textContent = "silly!!!";
+    };
+    // 3. Add the event listener for the element and function
+    // anonymous "inline"
+    clickerButton.addEventListener("click", onButtonClick);
+    
+    </script>
         
       <h1> The Joaquina Factor</h1>
       <h5> A scientific healthy approach<br> 
